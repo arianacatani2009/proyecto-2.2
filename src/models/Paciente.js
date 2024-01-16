@@ -1,5 +1,6 @@
 import mongoose, {Schema,model} from 'mongoose'
 import bcrypt from "bcryptjs"
+import mongoose, {Schema,model} from 'mongoose'
 
 const pacienteSchema = new Schema({
     nombre:{
@@ -52,10 +53,18 @@ const pacienteSchema = new Schema({
         type:Boolean,
         default:true
     },
+   
     veterinario:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Veterinario'
-    }
+    },
+    tratamientos:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Tratamiento'
+        }
+    ]
+
 },{
     timestamps:true
 })
