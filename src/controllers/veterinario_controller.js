@@ -1,4 +1,3 @@
-import sendMailToUser from "../config/nodemailer.js"
 import Veterinario from "../models/Veterinario.js"
 import { sendMailToUser, sendMailToRecoveryPassword } from "../config/nodemailer.js"
 import generarJWT from "../helpers/crearJWT.js"

@@ -49,4 +49,3 @@ export const validacionVeterinario =[
         }
     }
 ]
-​

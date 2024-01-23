@@ -1,6 +1,5 @@
 import mongoose, {Schema,model} from 'mongoose'
 import bcrypt from "bcryptjs"
-import mongoose, {Schema,model} from 'mongoose'
 
 const pacienteSchema = new Schema({
     nombre:{

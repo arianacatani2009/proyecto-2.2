@@ -26,7 +26,7 @@ router.post('/recuperar-password',recuperarPassword)
 router.get('/recuperar-password/:token',comprobarTokenPasword)
 router.post('/nuevo-password/:token',nuevoPassword)
 
-router.get('/perfil',verificarAutenticacion,perfil)
+//router.get('/perfil',verificarAutenticacion,perfil)
 router.put('/veterinario/actualizarpassword',verificarAutenticacion,actualizarPassword)
 router.get('/veterinario/:id',verificarAutenticacion,detalleVeterinario)
 router.put('/veterinario/:id',verificarAutenticacion,actualizarPerfil)
